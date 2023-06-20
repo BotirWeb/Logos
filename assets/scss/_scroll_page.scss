@@ -1,0 +1,71 @@
+header{
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);;
+
+
+    .scroll_header{
+        display: flex;
+        justify-content: space-between;
+        padding: 13px 0 14px 80px;
+        align-items: center;
+
+    
+        .scroll_header_list{
+            padding: 0;
+            align-items: center;
+
+             nav{
+                display: flex;
+                justify-content: space-between;
+        
+                li{
+                    list-style: none;
+        
+                    a{
+                        text-decoration: none;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: $FirstFontColor;
+                        position: relative;
+                        
+                        &:after{
+                            content: '';
+                            display: block;
+                            width: 0;
+                            height: 3px;
+                            background: #618967;
+                            box-shadow: 0px 5px 12px rgba(114, 164, 121, 0.3);
+                            transform: rotate(-180deg);
+                            position: absolute;
+                            transition: .3s all ease;
+                            bottom: -43px;
+                        }
+        
+                        &:hover{
+                            font-weight: 500;
+                            position: relative;
+            
+                            &::after{
+                                width: 100%;
+                            }
+                            
+                        }
+                       
+        
+                        
+                    }
+                }
+            }
+        }
+
+        .scroll_header_button{
+            display: flex;
+            justify-content: center;
+
+            .scroll_basket{
+                padding:  14px 13px 14px 24px;
+            }
+        }
+    }
+}
