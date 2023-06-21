@@ -1,6 +1,7 @@
 .container {
   margin: 0 auto;
   padding: 0;
+  min-width: 1440px;
 }
 
 ul,
@@ -19,4 +20,33 @@ body {
   font-size: 18px;
   color: $FirstFontColor;
   background-color: $backgroundColor;
+}
+
+// SECTION TITLE
+.section_title{
+  padding: 50px 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+  span{
+    position: relative;
+    padding-left: 19px;
+
+    &::after{
+      content: '';
+      display: block;
+      width: 4px;
+      height: 33px;
+      left: 0;
+      top: 2px;
+      margin: 0 auto;
+      background-color: #618967;
+      position: absolute;
+    }
+  }
+   
 }

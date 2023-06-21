@@ -7,7 +7,7 @@ header{
     .scroll_header{
         display: flex;
         justify-content: space-between;
-        padding: 13px 0 14px 80px;
+        padding: 13px 0 14px 0px;
         align-items: center;
 
     
@@ -18,6 +18,18 @@ header{
              nav{
                 display: flex;
                 justify-content: space-between;
+                position: relative;
+
+
+                &::after{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    background: linear-gradient(270deg, #403C3B 0%, rgba(70, 66, 65, 0) 100%);
+                    width: 176px;
+                    height: 24px;
+                    right: 0;
+                }
         
                 li{
                     list-style: none;
@@ -107,3 +119,118 @@ header{
 
 // HEADER FINISH
 
+//MENYU START
+.menyu_section{
+    padding-bottom: 50px;
+    border-bottom: 1px solid #53504f;
+
+    .container{
+
+        // .menyu_section_title{
+            
+        // }
+        
+        .menyu_slide{
+            // overflow: inherit;
+            // background: linear-gradient(360deg, #211F20 0%, #44403F 100%);
+
+            .menyu_item{
+                background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+                border-radius: 10px;
+
+                &:hover{
+                    filter: drop-shadow(0px 30px 45px rgba(43, 40, 40, 0.6));
+                    transition: .3s all ease;
+                }
+
+                .menyu_item_top{
+
+                    img{
+                        width: 100%;
+                        filter: drop-shadow(0px 30px 45px rgba(43, 40, 40, 0.6));
+                        border-radius: 10px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+
+                .menyu_item_bottom{
+                    padding-left: 20px;
+                    padding-right: 16px;
+
+                    .menyu_bottom_title{
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 15px 0px 5px 0;
+
+                        .title{
+                            font-weight: 700;
+                            font-size: 22px;
+                            line-height: 27px;
+                        }
+
+                        .wieght{
+                            font-size: 12px;
+                            line-height: 14px;
+                        }
+                    }
+
+                    .menyu_bottom_description{
+                        font-size: 13px;
+                        line-height: 17px;
+                        padding-bottom: 15px;
+                        width: 249px;
+                        height: 34px;
+                        overflow: hidden;
+                    }
+
+                    .menu_bottom_active{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 15px 0 18px 0;
+
+                        .menu_bottom_price{
+                            font-weight: 600;
+                            font-size: 20px;
+                            line-height: 24px;
+                        }
+
+                        .menu_bottom_backet{
+                            padding: 10px 16px 10px 19px;
+                            background: $ButtonBgGradient;
+                            border-radius: 10px;
+                            
+                            span{
+                                padding-left: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//MENYU END
+
+//MENYU BOTTOM START
+
+.menyu_bottom{
+    position: relative;
+    z-index: 1;
+
+    &::after{
+        content: '';
+        display: block;
+        background: linear-gradient(180deg, rgba(59, 56, 55, 0) 0%, #3B3837 100%);
+        position: absolute;
+        height: 282px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        z-index: 10;
+    }
+}
+
+// MENYU BOTTOM END

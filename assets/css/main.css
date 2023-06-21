@@ -5,6 +5,7 @@
 .container {
   margin: 0 auto;
   padding: 0;
+  min-width: 1440px;
 }
 
 ul,
@@ -23,6 +24,31 @@ body {
   font-size: 18px;
   color: #ffffff;
   background-color: #403C3B;
+}
+
+.section_title {
+  padding: 50px 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.section_title span {
+  position: relative;
+  padding-left: 19px;
+}
+.section_title span::after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 33px;
+  left: 0;
+  top: 2px;
+  margin: 0 auto;
+  background-color: #618967;
+  position: absolute;
 }
 
 nav {
@@ -151,7 +177,7 @@ header {
 header .scroll_header {
   display: flex;
   justify-content: space-between;
-  padding: 13px 0 14px 80px;
+  padding: 13px 0 14px 0px;
   align-items: center;
 }
 header .scroll_header .scroll_header_list {
@@ -161,6 +187,16 @@ header .scroll_header .scroll_header_list {
 header .scroll_header .scroll_header_list nav {
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+header .scroll_header .scroll_header_list nav::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: linear-gradient(270deg, #403C3B 0%, rgba(70, 66, 65, 0) 100%);
+  width: 176px;
+  height: 24px;
+  right: 0;
 }
 header .scroll_header .scroll_header_list nav li {
   list-style: none;
@@ -230,4 +266,86 @@ header .scroll_header .scroll_header_button .scroll_basket .number {
   font-size: 12px;
   line-height: 14px;
   color: #403C3B;
+}
+
+.menyu_section {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #53504f;
+}
+.menyu_section .container .menyu_slide .menyu_item {
+  background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+  border-radius: 10px;
+}
+.menyu_section .container .menyu_slide .menyu_item:hover {
+  filter: drop-shadow(0px 30px 45px rgba(43, 40, 40, 0.6));
+  transition: 0.3s all ease;
+}
+.menyu_section .container .menyu_slide .menyu_item .menyu_item_top img {
+  width: 100%;
+  filter: drop-shadow(0px 30px 45px rgba(43, 40, 40, 0.6));
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+.menyu_section .container .menyu_slide .menyu_item .menyu_item_bottom {
+  padding-left: 20px;
+  padding-right: 16px;
+}
+.menyu_section .container .menyu_slide .menyu_item .menyu_item_bottom .menyu_bottom_title {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0px 5px 0;
+}
+.menyu_section .container .menyu_slide .menyu_item .menyu_item_bottom .menyu_bottom_title .title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+}
+.menyu_section .container .menyu_slide .menyu_item .menyu_item_bottom .menyu_bottom_title .wieght {
+  font-size: 12px;
+  line-height: 14px;
+}
+.menyu_section .container .menyu_slide .menyu_item .menyu_item_bottom .menyu_bottom_description {
+  font-size: 13px;
+  line-height: 17px;
+  padding-bottom: 15px;
+  width: 249px;
+  height: 34px;
+  overflow: hidden;
+}
+.menyu_section .container .menyu_slide .menyu_item .menyu_item_bottom .menu_bottom_active {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0 18px 0;
+}
+.menyu_section .container .menyu_slide .menyu_item .menyu_item_bottom .menu_bottom_active .menu_bottom_price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+.menyu_section .container .menyu_slide .menyu_item .menyu_item_bottom .menu_bottom_active .menu_bottom_backet {
+  padding: 10px 16px 10px 19px;
+  background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+  border-radius: 10px;
+}
+.menyu_section .container .menyu_slide .menyu_item .menyu_item_bottom .menu_bottom_active .menu_bottom_backet span {
+  padding-left: 12px;
+}
+
+.menyu_bottom {
+  position: relative;
+  z-index: 1;
+}
+.menyu_bottom::after {
+  content: "";
+  display: block;
+  background: linear-gradient(180deg, rgba(59, 56, 55, 0) 0%, #3B3837 100%);
+  position: absolute;
+  height: 282px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: 10;
 }/*# sourceMappingURL=main.css.map */
