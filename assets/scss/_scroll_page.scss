@@ -1,3 +1,4 @@
+// HEADER START
 header{
     position: relative;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);;
@@ -39,7 +40,7 @@ header{
                             transform: rotate(-180deg);
                             position: absolute;
                             transition: .3s all ease;
-                            bottom: -43px;
+                            bottom: -31px;
                         }
         
                         &:hover{
@@ -65,7 +66,44 @@ header{
 
             .scroll_basket{
                 padding:  14px 13px 14px 24px;
+                background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+                border-radius: 10px;
+                width: 149px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                text-decoration: none;
+
+                .basket{
+                    border-right: 1px solid rgba(255, 255, 255, 0.3);
+                    padding-right: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #FFFFFF;
+                }
+                
+                .number{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    background: #FFFFFF;
+                    border-radius: 10px;
+                    color: #fff;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #403C3B;
+                }
             }
         }
     }
 }
+
+// HEADER FINISH
+
