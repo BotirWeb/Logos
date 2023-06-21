@@ -43,11 +43,6 @@ nav .header_search__form .form-control {
   background-size: auto;
   background-position: 14px center, calc(100% - 17px) center;
 }
-nav .header_search__form .form-control::-moz-placeholder {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-}
 nav .header_search__form .form-control::placeholder {
   font-weight: 400;
   font-size: 18px;
@@ -188,7 +183,7 @@ header .scroll_header .scroll_header_list nav li a:after {
   transform: rotate(-180deg);
   position: absolute;
   transition: 0.3s all ease;
-  bottom: -31px;
+  bottom: -42px;
 }
 header .scroll_header .scroll_header_list nav li a:hover {
   font-weight: 500;
