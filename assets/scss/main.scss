@@ -7,8 +7,14 @@
 // HEADER SCSS 
 @import "_header";
 
+// hero section
+@import "hero";
+
+//scroll
+@import "scroll";
+
 // SCROLL PAGE SCSS
-@import "_scroll_page"; 
+@import "_scroll_page";
 
 // FOOTER SCSS 
 @import "_footer";

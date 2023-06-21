@@ -1,0 +1,89 @@
+@import url(../fonts/Gilroy-Bold.ttf);
+@import url(../fonts/Gilroy-ExtraBold.ttf);
+@import url(../fonts/Gilroy-Medium.ttf);
+@import url(../fonts/Gilroy-Regular.ttf);
+
+nav {
+  padding: 23px 0;
+  align-items: center;
+  background: #403C3B;
+
+  .header_search__form {
+
+    .form-control {
+      position: relative;
+      padding: 15px 0 15px 50px;
+      background: #504B4A;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      width: 100%;
+      background-image: url(../images/location_header.svg), url(../images/header_search.svg);
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: 14px center, calc(100% - 17px) center;
+
+      &::placeholder {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+      }
+
+      &:focus {
+        color: #fff;
+        border: none;
+        box-shadow: none;
+      }
+    }
+
+
+  }
+
+  .header_contact {
+    span {
+      margin-left: 10px;
+      line-height: 20px;
+
+      &:first-child {
+        font-weight: 400;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .header_bucket {
+    background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+    border-radius: 10px;
+    padding: 7px 13px 7px 14px;
+
+    a {
+      color: #fff;
+
+      span {
+        display: inline-block;
+
+        &:first-child {
+
+          border-right: 1px solid #FFFFFF4D;
+          padding: 10px 20px 10px 10px;
+        }
+
+        &:last-child {
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 14px;
+          color: #000;
+          border-radius: 50%;
+          background-color: #fff;
+          padding: 5px 8px;
+          margin-left: 12px;
+        }
+
+      }
+    }
+
+
+  }
+
+
+}

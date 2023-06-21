@@ -1,20 +1,22 @@
-.container{
-    margin: 0 auto;
-    padding: 0;
+.container {
+  margin: 0 auto;
+  padding: 0;
 }
 
-ul,ol,p,*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+ul,
+ol,
+p,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Gilroy';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    color: $FirstFontColor;
-    background-color: $backgroundColor;
-    max-width: 1440px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: $FirstFontColor;
+  background-color: $backgroundColor;
 }
