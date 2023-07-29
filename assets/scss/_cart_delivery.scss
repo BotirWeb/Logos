@@ -1,0 +1,314 @@
+.back_food{
+    margin-left: 318px;
+    margin-top: 34px;
+
+    a{
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: none;
+    }
+}
+
+.section_title{
+    padding-top: 20px !important;
+}
+
+.menyu_section_title{
+    margin-left: 318px;
+    
+
+    .cart_count{
+        color: #72A479;
+        font-size: 15px;
+        font-weight: 500;
+        text-transform: lowercase;
+
+        &::after{
+            width: 0;
+        }
+    }
+}
+
+// ORDER SHOW SECTION START
+.order_show{
+
+
+    .container{
+        border-radius: 10px;
+        background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+        
+        //  ORDER SHOW ITEMS
+        .order_show_item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+
+            
+        }
+
+        .order_show_item.linear_gradient{
+            position: relative;
+
+            &::after{
+                content: '';
+                position: absolute;
+                width: 1096px;
+                top: 0;
+                left: 0;
+                height: 1px;
+                background: linear-gradient(270deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.20) 100%);
+            }
+        }
+        // ORDER SHOW ITEMS ENDS
+
+
+        .order_show_left{
+            display: flex;
+            align-items: center;
+
+            img{
+                width: 117px;
+                height: 86px;
+                flex-shrink: 0;
+            }
+
+            .left_text{
+                width: 265px;
+                margin-left: 39px;
+
+                title{
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+
+                .description{
+                    color: #A6A7AB;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+            }
+
+        }
+
+        .order_show_right{
+            font-family: Gilroy;
+            font-size: 20px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            
+            // circle buttons
+            button.btn.btn-circle.btn-xl{
+                background-color: #72A479;
+                --bs-btn-border-radius: 60%;
+            }
+
+            .right_count{
+                display: flex;
+                align-items: center;
+
+                .right_number{
+                    padding: 0 14px;
+                }   
+            }
+
+            .right_price{
+                padding: 0 72px 0 130px;
+            }
+
+            .right_cancellation{
+                
+                img{
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+}
+
+// ORDER SHOW SECTION END
+
+
+// ADD ORDER SECTION START
+
+.add_order{
+    margin-bottom: 30px;
+    .container{
+        
+        
+        .add_order_title{
+            font-size: 25px;
+            margin: 40px 0 30px 0;
+            font-weight: 700;
+        }
+
+        .add_order_block{
+            display: flex;
+            border-radius: 10px;
+            background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+        }
+
+        .add_order_item{
+            align-items: center;
+            width: 286px;
+            display: flex;
+            flex-direction: column;
+            padding: 19px 31px 13px 35px;
+            position: relative;
+
+            &::after{
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 245px;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(269deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.20) 100%);
+            }
+            
+            .item_img{
+
+                
+                img{
+                    width: 209px;
+                    height: 123px;
+                    flex-shrink: 0;
+                    border-radius: 10px;
+                    background: url(<path-to-image>), lightgray 1059596692354095400px 12083553896889992px / -560733210763460500% -673489494665496200% no-repeat;
+                }
+            }
+
+            .item_title {
+                font-size: 14px;
+                font-weight: 700;
+                padding: 10px 0;
+            }
+
+            .order_item_bottom{
+
+                .add_cart{
+                    display: flex;
+                    
+
+                    span{
+                        color: #C6CED1;
+                        font-size: 12px;
+                    }
+
+                    button{
+                        background-color: #72A479;
+                        --bs-btn-border-radius: 60%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 22px;
+                        width: 16px;
+                        margin-left: 7px;
+
+                        img{
+                            width: 8px;
+                            height: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.add_order .container .add_order_item:last-child::after{
+    width: 0;
+}
+// ADD ORDER SECTION END
+
+// LINE
+.section_line{
+
+    .container{
+        display: flex;
+        justify-content: center;
+
+        .line{
+            background: rgba(255, 255, 255, 0.10);
+            width: 1059px;
+            height: 1px;
+            margin-bottom: 49px;
+            align-items: center;
+        }
+    }
+}
+
+
+// MAKE AN ORDER START
+
+.make_order{
+    margin-bottom: 89px;
+
+    .container{
+        border-radius: 10px;
+        background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+        padding: 20px 27px 11px 39px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .make_order_left{
+
+            .total_amount{
+
+                span{
+
+                    &:first-child{
+                        color: #A6A7AB;
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+
+                    &:last-child{
+                        font-size: 25px;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .delivery{
+
+                span{
+                    font-size: 12px;
+                    font-weight: 500;
+
+                    &:first-child{
+                        text-align: center;
+                    }
+
+                    &:last-child{
+                        color: #72A479;
+                    }
+                }
+            }
+
+            .minimum_amount {
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+
+        .make_order_right{
+
+            button{
+                width: 209px;
+                height: 51px;
+                flex-shrink: 0;
+                border-radius: 10px;
+                background: linear-gradient(133deg, #618967 0%, #72A479 100%);
+                border: none;
+                color: #FFF;
+                font-weight: 700;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+// MAKE AN ORDER END

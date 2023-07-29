@@ -1,0 +1,504 @@
+// body{
+//     background: linear-gradient(0deg, #211F20 0%, #44403F 100%);
+// }
+
+.back_cart{
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 0;
+
+    .container{
+        width: 800px;
+    }
+
+    a{
+        color: #FFF;
+        text-decoration: none;
+    }
+}
+
+.menyu_section_title{
+    margin-left: 0;
+
+    .container{
+        width: 800px;
+    }
+}
+
+// STOP LIST START
+
+.stop_list{
+    margin: 5px 0 20px 0;
+
+    .container{
+        width: 800px;
+        border-radius: 10px;
+        background: #2B2829;
+        padding: 23px 55px 0 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        .stop_list_left{
+
+            .stop_list_title{
+                font-size: 22px;
+                font-weight: 700;
+            }
+
+            .order_under{
+                font-weight: 400;
+                font-size: 18px;
+                margin-top: 20px;
+            }
+        }
+    
+        // .stop_list_img{
+
+        // }
+    }
+}
+
+// START LIST END
+
+
+//  CHECKOUT SECTION START
+.checkout_section{
+
+    .container{
+        width: 800px;
+
+        .contact_information{
+            border-radius: 10px;
+            background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+            padding: 32px 29px 55px 30px;
+
+            .contact_title{
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: 31px;
+            }
+
+            .contact_buttons{
+
+                input{
+                    padding: 21px 128px 20px 30px;
+                    border-radius: 10px;
+                    background: inherit;
+                    border: 1px solid rgba(255, 255, 255, 0.10);
+
+                    &:first-child{
+                    margin-right: 15px;
+                    }
+
+                    &::placeholder{
+                        color: #FFF;
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
+// CHECKOUT END
+
+// DELIVERY SECTION START
+.delivery_section{
+    margin-top: 22px;
+
+    .container{
+        border-radius: 10px;
+        background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+        padding: 30px 0 32px 30px;
+        width: 800px;
+
+        .delivery_information{
+
+            .delivery_title{
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            .delivery_buttons{
+                display: flex;
+                align-items: center;
+                padding: 30px 0 30px 0;
+
+                .btn-group{
+                    width: 363px;
+                    height: 60px;
+                    flex-shrink: 0;
+
+                    button{
+                        background-color: inherit;
+                        border-radius: 10px;
+                        border: 1px solid #72A479;
+                        color: #FFF;
+                        font-size: 16px;
+                        font-weight: 500;
+                        transition: .3s all linear;
+
+                        &:first-child{
+                            border-radius: 10px 0px 0px 10px;
+                        }
+
+                        &:last-child{
+                        border-radius: 0px 10px 10px 0;
+                        }
+
+                        &:hover{
+                            background: linear-gradient(133deg, #618967 0%, #72A479 100%);
+                            font-weight: 700;
+                        }
+                    }
+                }
+
+                .delivery_time{
+
+                    img{
+                        margin: 0 10px 0 20px;
+                    }
+
+                    span{
+                        font-size: 16px;
+                        font-size: 500;
+                    }
+                }
+
+            }
+
+            .delivery_address{
+
+                .address_title{
+                    font-size: 16px;
+                    font-weight: 700;
+                    margin-bottom: 22px;
+                }
+
+                input{
+                    padding: 21px 0 20px 30px;
+                    background-color: inherit;
+                    border-radius: 10px;
+                    border: 1px solid rgba(255, 255, 255, 0.10);
+
+                    &::placeholder{
+                        color: #FFF;
+                        font-size: 16px;
+                    }
+                }
+
+                .address_inputs{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+
+
+                    .enter_street{
+
+                        input{
+                            width: 410px;
+                        }
+                    }
+
+                    .house_number{
+
+                        input{
+                            width: 173px;
+                        }
+                    }
+
+                    .office_number{
+
+                        input{
+                            width: 215px;
+                        }
+                    }
+
+                    .entrance{
+
+                        input{
+                            width: 173px;
+                        }
+                    }
+
+                    .floor{
+
+                        input{
+                            width: 173px;
+                        }
+                    }
+
+                    .comment{
+
+                        input{
+                            width: 601px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// DELIVERY SECTION END
+
+
+// PAY SECTION START
+.pay_section{
+    margin: 20px 0;
+
+    .container{
+        width: 800px;
+        border-radius: 10px;
+        background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+        padding: 30px;
+
+        .pay_title{
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .pay_buttons{
+
+            .btn-group{
+                margin: 32px 0 15px 0;
+                border-radius: 10px;
+                border: 1px solid #72A479;
+                width: 551px;
+
+                button{
+                    background-color: inherit;
+                    color: #FFF;
+                    font-size: 16px;
+                    font-weight: 500;
+                    padding: 20px 0;
+                    border-right: 1px solid #72A479;
+
+                    &:last-child{
+                        border-right: none;
+                    }
+
+                    &:hover{
+                        background: linear-gradient(133deg, #618967 0%, #72A479 100%);
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .surrender{
+
+                input{
+                    padding: 20px 30px;
+                    width: 173px;
+                    height: 60px;
+                    border-radius: 10px;
+                    border: 1px solid rgba(255, 255, 255, 0.10);
+                    background-color: inherit;
+                }
+            }
+        }
+    }
+}
+// PAY SECTION END
+
+// WHEN DELIVERY START
+
+.when_delivery{
+
+    .container{
+
+        .when_delivery_buttons{
+
+
+            .btn-group{
+                width: 363px;
+
+                button{
+
+                    &:last-child{
+                        width: 153px;
+                    }
+                }
+                
+            }
+
+            .call_person{
+                border-radius: 10px;
+                border: 1px solid rgba(255, 255, 255, 0.10);
+                padding: 20px 18px 20px 29px;
+                width: 280px;
+
+                button{
+                    background-color: inherit;
+                    border: none;
+                }
+
+                .person{
+                    margin-right: 33px;
+                    font-size: 16px;
+                }
+
+                .number{
+                    margin: 0 18px;
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+
+            }
+
+            .call_radio{
+
+                .do_you_want{
+                    font-size: 16px;
+                    font-weight: 700;
+                    margin: 22px 0 20px 0;
+                }
+                
+                .form_check{
+                    
+                    ul{
+                        li{
+                            list-style: none;
+
+                            &:first-child{
+                                margin-bottom: 20px;
+                            }
+
+                            label{
+                                
+                                input{
+                                    display: none;
+                                }
+
+                                span{
+                                    position: relative;
+                                    padding-left: 30px;
+        
+                                    &::before{
+                                        content: '';
+                                        border: 1px solid #72A479;
+                                        height: 20px;
+                                        width: 20px;
+                                        position: absolute;
+                                        display: block;
+                                        top: -1px;
+                                        left: 0px;
+                                        border-radius: 50%;
+                                        transition: .3s all ease;
+                                    }
+            
+                                    &::after{
+                                        content: '';
+                                        height: 18px;
+                                        width: 18px;
+                                        display: block;
+                                        background: #72A479;
+                                        border-radius: 50%;
+                                        top: 0;
+                                        left: 1px;
+                                        bottom: 0;
+                                        margin: 0 auto;
+                                        position: absolute;
+                                        opacity: 0;
+                                        transition: .3s all ease;
+                                    }
+        
+                                }
+                                
+                                input:checked ~ span:after{
+                                    opacity: 1;
+                                    transform: scale(0.8);
+                                    background: #72A479;
+                                }
+                            }
+                        }                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+// WHEN DELIVERY END
+
+
+// PERSONAL DATA
+.personal_data{
+
+    .container{
+        width: 800px;
+        padding: 17px 20px 17px 30px;
+
+        .personal_data_agree{
+
+            .form-check{
+                font-size: 13px;
+                font-weight: 500;
+
+                input{
+                    border-radius: 3px;
+                    border: 1px solid #E7EEF1;
+                    background: #FFF;
+                }
+
+                ul{
+                    li{
+                        list-style: none;
+
+                        label{
+
+                            input{
+                                display: none;
+                            }
+
+                            div{
+                                position: relative;
+                                padding-left: 31px;
+
+                                &::before{
+                                    content: '';
+                                    height: 20px;
+                                    width: 20px;
+                                    position: absolute;
+                                    display: block;
+                                    top: -1px;
+                                    left: 0px;
+                                    transition: .3s all ease;
+                                    border-radius: 3px;
+                                    border: 1px solid #E7EEF1;
+                                    background: #FFF;
+                                }
+            
+                                &::after{
+                                    content: '';
+                                    height: 18px;
+                                    width: 18px;
+                                    display: block;
+                                    top: 0;
+                                    left: 1px;
+                                    bottom: 0;
+                                    margin: 0 auto;
+                                    position: absolute;
+                                    opacity: 0;
+                                    transition: .3s all ease;
+                                    border-radius: 3px;
+                                    border: 1px solid #E7EEF1;
+                                    background: #FFF;
+                                    background-image: url('/assets/images/personal_data_vector.png');
+                                }
+
+                            }
+
+                            input:checked ~ div:after{
+                                opacity: 1;
+                                transform: scale(0.8);
+                                background: #72A479;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

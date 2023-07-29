@@ -1,0 +1,136 @@
+.order_view{
+    margin: 25px 0 50px 0px;
+    font-family: Gilroy;
+    line-height: normal;
+    font-style: normal;
+
+    .container{
+        width: 1210px !important;
+
+        .order_view_hero{
+            display: flex;
+            border-radius: 10px;
+            background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+
+            .order_view_left{
+                
+                img{
+                    width: 599px;
+                    height: -webkit-fill-available;
+                    margin-right: 50px;
+                    border-radius: 10px 0 0 10px;
+                    object-position: center;
+                    object-fit: cover;
+                    position: relative;
+                    z-index: 1;
+                }
+            }
+
+            .order_view_right{
+                margin-top: 38px;
+
+                .order_right_top{
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .title{
+                        color: #FFF;
+                        font-size: 25px;
+                        font-weight: 700;
+                        margin: 0 0 5px 0;
+                    }
+
+                    .description{
+                        color: #CFCFCF;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                }
+
+                .order_right_bottom{
+                    color: #FFF;
+                    font-size: 14px;
+                    margin-top: 113px;                    
+
+                    .weight{
+                        font-weight: 400;
+                    }
+
+                    .order_right_bottom_button{
+                        display: flex;
+                        align-items: center;
+                        margin: 22px 0 30px 0;
+
+                        .button{
+                            font-weight: 600;
+                            flex-shrink: 0;
+                            padding: 15px 15px 16px 20px;
+                            border-radius: 10px;
+                            display: flex;
+                            align-items: center;
+                            color: #FFF;
+                            border: none;
+                            background: linear-gradient(133deg, #618967 0%, #72A479 100%);
+                            
+
+                            .cart{
+                                display: block;
+                                position: relative;
+                                padding-right: 20px;
+
+                                &::before{
+                                    content: '';
+                                    position: absolute;
+                                    width: 1px;
+                                    height: 32px;
+                                    top: -6px;
+                                    right: 0;
+                                    background: rgba(255, 255, 255, 0.30);
+                                }
+                            }
+
+                            .img{
+                                padding-left: 20px;
+                            }
+                        }
+
+                        .price{
+                            font-size: 25px;
+                            margin-left: 25px;
+                            font-weight: 700;
+                        }
+                    }
+
+
+                    .table{
+
+                        .table_top{
+                            position: relative;
+                            display: block;
+                            
+                            &::after{
+                                content: '';
+                                display: block;
+                                right: 0;
+                                width: 612px;
+                                height: 1px;
+                                background-color: #ffffff54;
+                                position: absolute;
+                            }
+
+                        }
+                        
+                        span{
+                            padding: 5px 0px 5px 0;
+                            width: 80px;
+                            display: inline-block;
+                            color: #FFF;
+                            font-size: 12px;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
