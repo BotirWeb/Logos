@@ -1,6 +1,6 @@
-.container {
-  margin: 0 auto;
-  padding: 0;
+@font-face {
+  font-family: Gilroy;
+  src: url(../fonts/Gilroy-Regular.ttf);
 }
 
 ul,
@@ -19,4 +19,84 @@ body {
   font-size: 18px;
   color: $FirstFontColor;
   background-color: $backgroundColor;
+}
+
+.content_name {
+  .content_title {
+
+    margin: 50px 0;
+    padding-left: 15px;
+    border-left: 4px solid #618967;
+  }
+}
+
+.main {
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+  margin-bottom: 55px;
+
+  .row {
+
+    .main_item {
+      overflow: hidden;
+      height: 385px;
+      width: 325px;
+      border-radius: 10px;
+      background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+
+      .item_bottom {
+        height: 157px;
+        padding: 14px 16px 18px 20px;
+
+        .item_name {
+          p {
+            color: #FFF;
+            font-size: 22px;
+            font-weight: 700;
+          }
+
+          span {
+            font-size: 12px;
+            font-weight: 400;
+          }
+        }
+
+        .item_desc {
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 17px;
+          margin: 7px 0 15px;
+          height: 34px;
+        }
+
+        .header_bucket {
+
+
+          a {
+            gap: 12px;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            padding: 10px 16px 10px 19px;
+            background-color: #72A479;
+
+            span {
+              font-size: 14px;
+              font-weight: 600;
+            }
+          }
+        }
+
+      }
+
+
+    }
+  }
+
+  &.last {
+    border-bottom: none;
+  }
+
+
+
 }

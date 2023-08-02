@@ -1,0 +1,118 @@
+.map {
+  position: relative;
+
+
+  .map_contact {
+    position: absolute;
+    top: 50px;
+    width: 526px;
+    height: 405px;
+    border-radius: 15px;
+    background: #2E2B2C;
+    box-shadow: 0px 0px 70px 0px rgba(0, 0, 0, 0.15);
+    padding: 24px 41px 24px 36px;
+
+    .name {
+      font-family: Glory;
+      font-size: 30px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+      line-height: 1;
+    }
+
+    .address {
+      margin-bottom: 20px;
+      line-height: 1.3;
+      margin-left: 26px;
+
+      img {
+        margin-right: 11px;
+      }
+
+      .address_name {
+
+        span {
+          font-size: 14px;
+          font-weight: 400;
+        }
+
+        .address_title {
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .mail {
+      margin-bottom: 28px;
+      margin-left: 26px;
+
+      img {
+        margin-right: 11px;
+      }
+
+      .mail_name {
+        line-height: 1.2;
+
+        span {
+          font-size: 14px;
+          font-weight: 400;
+        }
+
+        .address_title {
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .map_line {
+      height: 1px;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.15) 47.92%, rgba(255, 255, 255, 0.00) 100%);
+      margin-bottom: 16px;
+    }
+
+    .contact {
+      align-items: center;
+      margin-bottom: 30px;
+      margin-left: 26px;
+
+      .order_table {
+        border-radius: 10px;
+        font-size: 13px;
+        font-weight: 700;
+        padding: 21px 30px;
+        line-height: 1;
+        background: linear-gradient(133deg, #618967 0%, #72A479 100%);
+      }
+
+      .contact_number {
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 1;
+      }
+
+      .contact_subtitle {
+        text-align: right;
+        font-weight: 400;
+        font-size: 13px;
+      }
+    }
+
+    .map_social {
+      align-items: center;
+
+      .map_social__title {
+        margin-right: 26px;
+      }
+
+      .socials {
+        display: flex;
+        gap: 0 10px;
+      }
+    }
+  }
+}
